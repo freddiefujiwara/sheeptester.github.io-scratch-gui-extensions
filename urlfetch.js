@@ -21,8 +21,8 @@ class UrlFetch {
     }
 
     fetch(args) {
-        const text = args.TET ;
-        console.log(Scratch.Cast)
+        const text = args.TEXT ;
+        console.log(Scratch)
         console.log(text);
         log.log(text);
     }
