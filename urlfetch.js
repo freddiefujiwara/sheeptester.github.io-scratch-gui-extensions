@@ -9,7 +9,7 @@ class UrlFetch {
             blocks: [{
                 opcode: 'fetch',
                 blockType: Scratch.BlockType.COMMAND,
-                text: 'UrlFetch',
+                text: 'fetch',
                 arguments: {
                     TEXT: {
                         type: Scratch.ArgumentType.STRING,
@@ -21,7 +21,8 @@ class UrlFetch {
     }
 
     fetch(args) {
-        const text = Scratch.Cast.toString(args.TEXT);
+        const text = args.TET ;
+        console.log(Scratch.Cast)
         console.log(text);
         log.log(text);
     }
