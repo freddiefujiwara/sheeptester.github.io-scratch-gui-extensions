@@ -1,8 +1,3 @@
-const ArgumentType = require('../../extension-support/argument-type');
-const BlockType = require('../../extension-support/block-type');
-const Cast = require('../../util/cast');
-const log = require('../../util/log');
-
 class UrlFetch {
 
     constructor() {}
@@ -17,7 +12,7 @@ class UrlFetch {
                 text: 'UrlFetch',
                 arguments: {
                     TEXT: {
-                        type: ArgumentType.STRING,
+                        type: Scratch.ArgumentType.STRING,
                         defaultValue: "https://www.google.com/"
                     }
                 }
@@ -26,7 +21,7 @@ class UrlFetch {
     }
 
     fetch(args) {
-        const text = Cast.toString(args.TEXT);
+        const text = Scratch.Cast.toString(args.TEXT);
         console.log(text);
         log.log(text);
     }
