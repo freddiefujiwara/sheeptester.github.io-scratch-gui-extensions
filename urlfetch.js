@@ -2,22 +2,22 @@ class UrlFetch {
 
   constructor() {}
 
-  getInfo() { // 拡張機能の各種情報
+  getInfo() { 
     return {
-      id: 'test',
-      name: 'Test', // 拡張機能の名前
-      blocks: [ // 各ブロックの定義
+      id: 'urlfetch',
+      name: 'UrlFetch', 
+      blocks: [ 
         {
-          opcode: 'hello', // このブロックが実行されると、helloという関数が呼ばれる
-          blockType: Scratch.BlockType.COMMAND,　// 「10歩動かす」のような通常の命令ブロック
-          text: 'hello' // ブロックに表示されるテキスト
+          opcode: 'fetch',
+          blockType: Scratch.BlockType.COMMAND,　
+          text: 'UrlFetch' 
         }
       ]
     }
   }
 
-  hello() {
-    console.log('hello'); // console log に hello と出力
+  fetch() {
+    console.log('fetch');
   }
 }
 
