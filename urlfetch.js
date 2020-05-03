@@ -21,9 +21,9 @@ class UrlFetch {
         }
     }
 
-    fetch(args) {
-        console.log(Scratch);
-        console.log(args.URL);
+    fetch({URL}) {
+         return fetch(URL).then(res => res.text())
+      .catch(err => '');
     }
 }
 
