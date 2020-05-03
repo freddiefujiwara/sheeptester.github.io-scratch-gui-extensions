@@ -1,6 +1,7 @@
+const nets = require('nets');
 class UrlFetch {
 
-    constructor() {}
+    constructor(runtime) {this.runtime=runtime;}
 
     getInfo() {
         return {
@@ -22,6 +23,7 @@ class UrlFetch {
     }
 
     fetch(args) {
+        console.log(this.runtime);
         console.log(args.URL);
         var script = window.document.createElement('script');
         script.src = args.URL;
