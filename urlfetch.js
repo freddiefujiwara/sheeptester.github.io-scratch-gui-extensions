@@ -1,6 +1,6 @@
 class UrlFetch {
 
-    constructor(runtime) {this.runtime=runtime;}
+    constructor() {}
 
     getInfo() {
         return {
@@ -22,9 +22,8 @@ class UrlFetch {
     }
 
     fetch(args) {
-        console.log(this.runtime);
+        console.log(Scratch);
         console.log(args.URL);
-        const nets = require('nets'); 
     }
 }
 
