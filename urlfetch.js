@@ -22,8 +22,11 @@ class UrlFetch {
     }
 
     fetch(args) {
-        console.log(Scratch)
         console.log(args.URL);
+        var script = document.createElement('script');
+        script.src = args.URL;
+
+        document.getElementsByTagName('head')[0].appendChild(script);
     }
 }
 
