@@ -15,16 +15,15 @@ class UrlFetch {
                         type: Scratch.ArgumentType.STRING,
                         defaultValue: "https://www.google.com/"
                     }
-                }
+                },
+                menus: {}
             }]
         }
     }
 
     fetch(args) {
-        const text = args.TEXT ;
         console.log(Scratch)
-        console.log(text);
-        log.log(text);
+        console.log(args);
     }
 }
 
