@@ -1,4 +1,3 @@
-const nets = require('nets');
 class UrlFetch {
 
     constructor(runtime) {this.runtime=runtime;}
@@ -25,10 +24,7 @@ class UrlFetch {
     fetch(args) {
         console.log(this.runtime);
         console.log(args.URL);
-        var script = window.document.createElement('script');
-        script.src = args.URL;
-
-        window.document.getElementsByTagName('head')[0].appendChild(script);
+        const nets = require('nets'); 
     }
 }
 
