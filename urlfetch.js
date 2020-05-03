@@ -9,9 +9,9 @@ class UrlFetch {
             blocks: [{
                 opcode: 'fetch',
                 blockType: Scratch.BlockType.COMMAND,
-                text: 'fetch',
+                text: 'fetch [URL]',
                 arguments: {
-                    TEXT: {
+                    URL: {
                         type: Scratch.ArgumentType.STRING,
                         defaultValue: "https://www.google.com/"
                     }
@@ -23,7 +23,7 @@ class UrlFetch {
 
     fetch(args) {
         console.log(Scratch)
-        console.log(args);
+        console.log(args.URL);
     }
 }
 
